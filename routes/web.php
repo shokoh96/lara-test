@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sample', function () {
-    return view('sample');
-});
+// Route::get('/sample', function () {
+//     return view('sample');
+// });
+
+// Route::get('URL', 'コントローラ@コントローラーのメソッド')->name('URLの名前');
+Route::get('/sample', 'SampleController@index')->name('sample.index');
